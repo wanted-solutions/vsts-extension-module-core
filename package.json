@@ -1,0 +1,24 @@
+{
+    "name": "@wanted.solutions/vsts-extensions-core",
+    "version": "0.1.0",
+    "type": "module",
+    "files": ["dist"],
+    "main": "./dist/vsts-extension-core.umd.cjs",
+    "module": "./dist/vsts-extension-core.js",
+    "exports": {
+        ".": {
+            "import": "./dist/vsts-extension-core.js",
+            "require": "./dist/vsts-extension-core.umd.cjs"
+        }
+    },
+    "dependencies": {
+        "azure-devops-extension-api": "~1.157.0",
+        "azure-devops-extension-sdk": "~2.0.11",
+        "azure-devops-ui": "~2.164.0",
+        "react": "~16.13.1",
+        "react-dom": "~16.13.1"
+    },
+    "devDependencies": {
+        "vite": "^5.4.4"
+    }
+}
